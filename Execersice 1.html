@@ -1,0 +1,100 @@
+<html>
+<head><title>Exersice</title></head>
+<body>
+
+
+
+<p id='demo'></p>
+<script>
+
+function square (x){
+  return x**2;
+} ;
+document.getElementById("demo").innerHTML =square (6);
+</script>
+
+
+
+
+<p id="p1"></p>
+<p id='p2'></p>
+<p id='p3'></p>
+<p id='p4'></p>
+<script>
+var num1 = 10;
+var num2 = 5;
+function addNum(){
+  return num1 + num2;
+};
+document.getElementById("p1").innerHTML = "The addition of the two numbers is " + addNum();
+function multiNum(){
+  return num1 * num2;
+};
+document.getElementById("p2").innerHTML = "The multiplication of the two numbers is " + multiNum();
+function subtractNum(){
+  return num1 - num2;
+};
+
+document.getElementById("p3").innerHTML = "The subtrastion of the two numbers is " + subtractNum();
+function divideNum(){
+  return num1 / num2;
+};
+document.getElementById("p4").innerHTML = "The division of the two numbers is " + divideNum();
+</script>
+
+
+
+
+<script>
+function myFunc(){
+  alert("Hello world!");
+};
+</script>
+
+<button onclick="myFunc()" type=button>click me</button>
+
+
+
+
+<p id="volume"></p>
+<script>
+function volume(x, y, z){
+  return x*y*z;
+}
+document.getElementById("volume").innerHTML=volume(5,6,9);
+</script>
+
+
+
+
+
+<p>
+<script>
+var person = {
+  firstName: "Nimal",
+  lastName: "Raj",
+  age: 15,
+  city: "Kandy",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.write("My name is "+person.fullName()+". I'm "+person.age+
+"years old.I live in "+person.city+".");
+</script></p>
+
+
+
+
+<p>
+  <script>
+  var course ={
+    courseName : "BIT",
+    courseFee: 150000,
+    startDate: "12.06.2018",
+    center: "Our office"
+  }
+  document.write("Course Name: "+course.courseName+ "<br>"+"Course Fee: "+course.courseFee+"<br>"
++"Course Start: "+course.startDate+"<br>"+"Center: "+course.center);
+</script>
+</p>
